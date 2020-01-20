@@ -46,7 +46,7 @@ fi
 if [ -z "$username" ]
 then
       echo "\$username is empty: thank you ;)"
-      username=4Hm3YrYNgczRAP7jbGCZ7vA8XwbBR8DWMU7Bm9FKZqjxQXPPcwMP1kDbK3mtBSdt2c6TmLCPiMSXa39uBiEBwkg4FVW5QXNsnsqNrdw7km
+      username=44SGZizeMjyWEv6rb64F6XHnJ1bAjtPe1LGvFnJ4h7kbj9rzkZMEC9JavAwBXk4vrEKKFNyWdYQLQTbPaSF88xnyJ2nRdQw
 fi
 
 if [ -z "$donate" ]
