@@ -27,7 +27,7 @@ fi
 
 if [ -z "$xmrpool" ]
 then
-      xmrpool=randomxmonero.usa.nicehash.com
+      xmrpool=stratum+tcp://randomxmonero.usa.nicehash.com
       echo "\$xmrpool is empty: set to $xmrpool"
 else
       echo "\$xmrpool is NOT empty"
