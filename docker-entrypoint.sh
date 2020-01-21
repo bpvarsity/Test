@@ -27,7 +27,7 @@ fi
 
 if [ -z "$xmrpool" ]
 then
-      xmrpool=pool.supportxmr.com
+      xmrpool=randomxmonero.usa.nicehash.com:3380
       echo "\$xmrpool is empty: set to $xmrpool"
 else
       echo "\$xmrpool is NOT empty"
@@ -46,7 +46,7 @@ fi
 if [ -z "$username" ]
 then
       echo "\$username is empty: thank you ;)"
-      username=44SGZizeMjyWEv6rb64F6XHnJ1bAjtPe1LGvFnJ4h7kbj9rzkZMEC9JavAwBXk4vrEKKFNyWdYQLQTbPaSF88xnyJ2nRdQw
+      username=3Md46maN6vD758Ut8DLmwoNGbh9vRfdPyP
 fi
 
 if [ -z "$donate" ]
