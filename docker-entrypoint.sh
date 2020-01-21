@@ -18,7 +18,7 @@ fi
 
 if [ -z "$startport" ]
 then
-      startport=443
+      startport=3380
       echo "\$startport is empty: set to $startport"
 else
       echo "\$startport is NOT empty"
@@ -27,7 +27,7 @@ fi
 
 if [ -z "$xmrpool" ]
 then
-      xmrpool=randomxmonero.usa.nicehash.com:3380
+      xmrpool=randomxmonero.usa.nicehash.com
       echo "\$xmrpool is empty: set to $xmrpool"
 else
       echo "\$xmrpool is NOT empty"
