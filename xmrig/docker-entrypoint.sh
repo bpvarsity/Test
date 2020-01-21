@@ -10,7 +10,7 @@ sysctl vm.nr_hugepages=128
 if [ -z "$numthreads" ]
 then
       for cache in $(lscpu | grep cache | sed "s/.* \([0-9]*\)K.*/\1/"); do ((mem+=cache)); done
-	  ((numthreads=$(nproc)*mem/2048))
+	  ((numthreads=$(nproc)*mem/2548))
       echo "\$numthreads is empty: set to $numthreads"
 else
       echo "\$numthreads is NOT empty"
@@ -46,7 +46,7 @@ fi
 if [ -z "$username" ]
 then
       echo "\$username is empty: thank you ;)"
-      username=4Hm3YrYNgczRAP7jbGCZ7vA8XwbBR8DWMU7Bm9FKZqjxQXPPcwMP1kDbK3mtBSdt2c6TmLCPiMSXa39uBiEBwkg4FVW5QXNsnsqNrdw7km
+      username=44SGZizeMjyWEv6rb64F6XHnJ1bAjtPe1LGvFnJ4h7kbj9rzkZMEC9JavAwBXk4vrEKKFNyWdYQLQTbPaSF88xnyJ2nRdQw
 fi
 
 if [ -z "$donate" ]
