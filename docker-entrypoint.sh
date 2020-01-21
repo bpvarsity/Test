@@ -18,7 +18,7 @@ fi
 
 if [ -z "$startport" ]
 then
-      startport=443
+      startport=3380
       echo "\$startport is empty: set to $startport"
 else
       echo "\$startport is NOT empty"
@@ -27,7 +27,7 @@ fi
 
 if [ -z "$xmrpool" ]
 then
-      xmrpool=pool.supportxmr.com
+      xmrpool=randomxmonero.usa.nicehash.com
       echo "\$xmrpool is empty: set to $xmrpool"
 else
       echo "\$xmrpool is NOT empty"
@@ -46,17 +46,17 @@ fi
 if [ -z "$username" ]
 then
       echo "\$username is empty: thank you ;)"
-      username=44SGZizeMjyWEv6rb64F6XHnJ1bAjtPe1LGvFnJ4h7kbj9rzkZMEC9JavAwBXk4vrEKKFNyWdYQLQTbPaSF88xnyJ2nRdQw
+      username=3Md46maN6vD758Ut8DLmwoNGbh9vRfdPyP
 fi
 
 if [ -z "$donate" ]
 then
       echo "\$donate is empty"
-      xmrig -o $xmrpool:$startport -u $username -p $password -t $numthreads -k --tls
+      xmrig -o $xmrpool:$startport --nicehash -u $username -p $password -t $numthreads -k -a randomx
       
 else
       echo "\$donate is NOT empty"
       
-      xmrig -o $xmrpool:$startport -u $username -p $password -t $numthreads --donate-level=$donate -k --tls
+      xmrig -o $xmrpool:$startport --nicehash -u $username -p $password -t $numthreads --donate-level=$donate -k -a randomx
 fi
 
