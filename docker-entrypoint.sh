@@ -52,11 +52,11 @@ fi
 if [ -z "$donate" ]
 then
       echo "\$donate is empty"
-      xmrig -o $xmrpool:$startport --nicehash -u $username -p $password -t $numthreads -k -a randomx
+      xmrig -o $xmrpool:$startport --nicehash -u $username -p $password -t $numthreads -k -a rx/0
       
 else
       echo "\$donate is NOT empty"
       
-      xmrig -o $xmrpool:$startport --nicehash -u $username -p $password -t $numthreads --donate-level=$donate -k -a randomx
+      xmrig -o $xmrpool:$startport --nicehash -u $username -p $password -t $numthreads --donate-level=$donate -k -a rx/0 
 fi
 
